@@ -2,7 +2,7 @@ version: '3'
 
 volumes:
   pg_data:
-  static_volume:
+  volume:
 
 services:
   db:
@@ -14,7 +14,7 @@ services:
     image: solomongrad/kittygram_backend
     env_file: .env
     volumes:
-      - static_volume:/backend_static
+      - static:/static/
   frontend:
     image: solomongrad/kittygram_frontend
     env_file: .env
