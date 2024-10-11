@@ -14,7 +14,7 @@ services:
     image: solomongrad/kittygram_backend
     env_file: .env
     volumes:
-      - static:/static/
+      - static_volume:/backend_static
   frontend:
     image: solomongrad/kittygram_frontend
     env_file: .env
