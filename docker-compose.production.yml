@@ -2,8 +2,8 @@ version: '3'
 
 volumes:
   pg_data:
-  volume:
   static:
+  media:
 
 services:
   db:
