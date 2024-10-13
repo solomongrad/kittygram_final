@@ -16,7 +16,7 @@ services:
     env_file: .env
     volumes:
       - static:/static
-      - media:/app/media
+      - media:/media
   frontend:
     image: solomongrad/kittygram_frontend
     env_file: .env
@@ -28,6 +28,6 @@ services:
     env_file: .env
     volumes:
       - static:/static
-      - media:/app/media
+      - media:/media
     ports:
       - 9000:80
