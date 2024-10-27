@@ -14,9 +14,11 @@ services:
   backend:
     image: solomongrad/kittygram_backend
     env_file: .env
+    depends_on:
+      - db
     volumes:
       - static:/static/
-      - media:/media/
+      - media:/app/media/
   frontend:
     image: solomongrad/kittygram_frontend
     env_file: .env
@@ -28,6 +30,6 @@ services:
     env_file: .env
     volumes:
       - static:/static/
-      - media:/media/
+      - media:/app/media/
     ports:
       - 9000:80
