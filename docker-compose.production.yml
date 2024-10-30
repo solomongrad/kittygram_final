@@ -12,7 +12,7 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
-    image: solomongrad/kittygram_backend
+    image: ${{ secrets.NICKNAME_GITHUB }}/kittygram_backend
     env_file: .env
     depends_on:
       - db
@@ -20,13 +20,13 @@ services:
       - static:/static/
       - media:/app/media/
   frontend:
-    image: solomongrad/kittygram_frontend
+    image: ${{ secrets.NICKNAME_GITHUB }}/kittygram_frontend
     env_file: .env
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static/
   gateway:
-    image: solomongrad/kittygram_gateway
+    image: ${{ secrets.NICKNAME_GITHUB }}/kittygram_gateway
     env_file: .env
     depends_on:
       - backend
