@@ -1,3 +1,5 @@
+![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
+
 ### Описание проекта 
 Kittygram - сервис для любителей котиков.
 
@@ -79,6 +81,8 @@ Kittygram - сервис для любителей котиков.
     * SSH_name — имя файла с SSH-ключом (без расширения);
     * username — ваше имя пользователя на сервере;
     * server_ip — IP вашего сервера.
+
+### Также в директорию kittygram/ скопируйте файл .env
 
 
 5. Запустите docker compose в режиме демона:
