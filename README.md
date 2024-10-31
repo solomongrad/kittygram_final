@@ -1,4 +1,4 @@
-![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
+![example event parameter](https://github.com/solomongrad/kittygram_final/actions/workflows/main.yml/badge.svg)
 
 ### Описание проекта 
 Kittygram - сервис для любителей котиков.
